@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import 'gl-ionic-background-video';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +11,7 @@ import { GalleryComponent } from './Components/gallery/gallery.component';
 import { HistoryComponent } from './Components/history/history.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { WelcomeComponent } from './Components/welcome/welcome.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { WelcomeComponent } from './Components/welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
