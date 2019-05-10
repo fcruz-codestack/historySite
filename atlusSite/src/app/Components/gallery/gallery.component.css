@@ -1,0 +1,12 @@
+h1{
+    color:red;
+}
+h3{
+    color:red;
+    font-size: 20px;
+    
+}
+.img-thumbnail {
+    height:250px;
+    width:100%;
+}
